@@ -65,6 +65,7 @@ $('body').keypress(function(key){
 	    
 		if(key.which===13){
 			document.getElementById("start").style.display = "none";
+			document.getElementById("game_name").style.display = "none";
 			document.getElementById("myCanvas").style.display = "block";
 
 			setTimeout(function(){ x.innerHTML="READY" }, 0);
@@ -97,7 +98,7 @@ function repeatOften(){
 			
 			if(lost(hero.curr_track_col)){
 			
-				alert('lost');
+				alert('You Lost');
 
 				restart();
 			}	
