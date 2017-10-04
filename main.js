@@ -98,9 +98,14 @@ function repeatOften(){
 			
 			if(lost(hero.curr_track_col)){
 			
-				alert('You Lost');
+			
+				alert('You Lost your score is'+score.val);
 
-				restart();
+			setTimeout(function(){ restart() }, 2000);
+
+
+
+				//restart();
 			}	
 		}
 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>game</title>
+
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "index.css" />
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="cotainer">
+
+<div id="game_name" class="row"><div class="col-sm-12">COLOR&nbsp&nbsp&nbsp&nbspSWITCH</div></div>
+
+
+<div class="container" id="lost_session">
+	<div class="row">
+		<div class="col-sm-12">You Lost!&nbsp&nbspYour score is<script>score.val</script></div>
+	</div>
+</div>
+
+<div class="container">
+<div id="levels" class="row">
+
+	<button  class="col-sm-4" id="level1" onclick="prepare_level1()">LEVEL 1</button>
+	<br><br>
+	<button  class="col-sm-4" id="level2" onclick="prepare_level2()">LEVEL 2</button>
+	<br><br>
+	<button  class="col-sm-4" id="level3" onclick="prepare_level3()">LEVEL 3</button>
+	
+</div>
+</div>
+
+
+
+<div class="container">
+<div id="start" class="row">
+<div class="col-sm-12">
+	<div class="row">
+		<div class="col-sm-12"><p class="heading">Instructions</p></div>
+	</div>
+	<br><br>
+	<div class="row"><div class="col-sm-12"><p>Hit the space bar when the color of the ball is  same as the color of the sector on which ball is currently</p></div></div>
+	<div class="row"><div class="col-sm-12"><p>Press 'Esc' at any time to pause the game and hit it again to resume</p></div></div>
+<div class="row"><div class="col-sm-12"><p>During the game press numkey 8 and 2 to increase and decrease speed of ball respectively</p></div></div>
+	<br><br><br>
+	<div class="row"><div class="col-sm-12"><p class="heading">Hit Enter to start the game</p></div></div>
+</div>
+</div>
+</div>
+
+
+<canvas id="myCanvas" width="600" height="600">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<div id="score"></div>
+<div id="countdown"></div>
+
+
+
+
+</div>
+
+<script type="text/javascript" src="color.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
